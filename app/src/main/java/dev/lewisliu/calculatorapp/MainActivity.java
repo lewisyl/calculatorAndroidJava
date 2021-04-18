@@ -3,6 +3,7 @@ package dev.lewisliu.calculatorapp;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -42,5 +43,12 @@ public class MainActivity extends AppCompatActivity {
         Button buttonMultiply = (Button) findViewById(R.id.buttonMultiply);
         Button buttonPlus = (Button) findViewById(R.id.buttonPlus);
         Button buttonMinus = (Button) findViewById(R.id.buttonMinus);
+
+        View.OnClickListener numListener = new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Button button = (Button) v;
+            }
+        }
     }
 }
