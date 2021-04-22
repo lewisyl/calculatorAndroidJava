@@ -48,8 +48,19 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Button button = (Button) v;
+                newNum.append(button.getText().toString());
             }
-
-        }
+        };
+        button0.setOnClickListener(numListener);
+        button1.setOnClickListener(numListener);
+        button2.setOnClickListener(numListener);
+        button3.setOnClickListener(numListener);
+        button4.setOnClickListener(numListener);
+        button5.setOnClickListener(numListener);
+        button6.setOnClickListener(numListener);
+        button7.setOnClickListener(numListener);
+        button8.setOnClickListener(numListener);
+        button9.setOnClickListener(numListener);
+        buttonDot.setOnClickListener(numListener);
     }
 }
